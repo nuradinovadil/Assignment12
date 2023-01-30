@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		391756592981D21B00D54460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391756582981D21B00D54460 /* AppDelegate.swift */; };
+		3917565B2981D21B00D54460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917565A2981D21B00D54460 /* SceneDelegate.swift */; };
+		3917565D2981D21B00D54460 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917565C2981D21B00D54460 /* MainViewController.swift */; };
+		391756622981D21D00D54460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391756612981D21D00D54460 /* Assets.xcassets */; };
+		391756652981D21D00D54460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391756632981D21D00D54460 /* LaunchScreen.storyboard */; };
+		3917566E2981D48D00D54460 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917566D2981D48D00D54460 /* MovieViewController.swift */; };
+		391756702981D4AB00D54460 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917566F2981D4AB00D54460 /* ProfileViewController.swift */; };
+		3917567229830CD300D54460 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917567129830CD300D54460 /* TicketViewController.swift */; };
+		3917567429830CEF00D54460 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917567329830CEF00D54460 /* PlaceViewController.swift */; };
+		3917567729848FD700D54460 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917567629848FD700D54460 /* CategoryCollectionViewCell.swift */; };
+		39175679298492E900D54460 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39175678298492E900D54460 /* Constants.swift */; };
+		3917567B29855C3C00D54460 /* TrendingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917567A29855C3C00D54460 /* TrendingCollectionViewCell.swift */; };
+		3917567D2985C20B00D54460 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917567C2985C20B00D54460 /* CategoryTableViewCell.swift */; };
+		3917567F2985C64A00D54460 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917567E2985C64A00D54460 /* SectionHeaderView.swift */; };
+		391756812986A77100D54460 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391756802986A77100D54460 /* PlacesTableViewCell.swift */; };
+		871230C319869A9B720D2984 /* Pods_KinoKz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E77B11F44CA4AAFEF1541ED /* Pods_KinoKz.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E77B11F44CA4AAFEF1541ED /* Pods_KinoKz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinoKz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391756552981D21B00D54460 /* KinoKz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoKz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		391756582981D21B00D54460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3917565A2981D21B00D54460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3917565C2981D21B00D54460 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		391756612981D21D00D54460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		391756642981D21D00D54460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		391756662981D21D00D54460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3917566D2981D48D00D54460 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		3917566F2981D4AB00D54460 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3917567129830CD300D54460 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		3917567329830CEF00D54460 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		3917567629848FD700D54460 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		39175678298492E900D54460 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3917567A29855C3C00D54460 /* TrendingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCollectionViewCell.swift; sourceTree = "<group>"; };
+		3917567C2985C20B00D54460 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		3917567E2985C64A00D54460 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		391756802986A77100D54460 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		45F36ADAC6A1D02408E2BACB /* Pods-KinoKz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoKz.debug.xcconfig"; path = "Target Support Files/Pods-KinoKz/Pods-KinoKz.debug.xcconfig"; sourceTree = "<group>"; };
+		AD5696C22DE2A220A17EA204 /* Pods-KinoKz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoKz.release.xcconfig"; path = "Target Support Files/Pods-KinoKz/Pods-KinoKz.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		391756522981D21B00D54460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871230C319869A9B720D2984 /* Pods_KinoKz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3917564C2981D21B00D54460 = {
+			isa = PBXGroup;
+			children = (
+				391756572981D21B00D54460 /* KinoKz */,
+				391756562981D21B00D54460 /* Products */,
+				EF44472B6D3ADA7B0D58A31D /* Pods */,
+				D08A757C52014177AC38C025 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		391756562981D21B00D54460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				391756552981D21B00D54460 /* KinoKz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		391756572981D21B00D54460 /* KinoKz */ = {
+			isa = PBXGroup;
+			children = (
+				3917567529848F9D00D54460 /* Views */,
+				3917566C2981D44B00D54460 /* ViewControllers */,
+				391756582981D21B00D54460 /* AppDelegate.swift */,
+				3917565A2981D21B00D54460 /* SceneDelegate.swift */,
+				39175678298492E900D54460 /* Constants.swift */,
+				3917565C2981D21B00D54460 /* MainViewController.swift */,
+				391756612981D21D00D54460 /* Assets.xcassets */,
+				391756632981D21D00D54460 /* LaunchScreen.storyboard */,
+				391756662981D21D00D54460 /* Info.plist */,
+			);
+			path = KinoKz;
+			sourceTree = "<group>";
+		};
+		3917566C2981D44B00D54460 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3917566D2981D48D00D54460 /* MovieViewController.swift */,
+				3917567329830CEF00D54460 /* PlaceViewController.swift */,
+				3917567129830CD300D54460 /* TicketViewController.swift */,
+				3917566F2981D4AB00D54460 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3917567529848F9D00D54460 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3917567629848FD700D54460 /* CategoryCollectionViewCell.swift */,
+				3917567A29855C3C00D54460 /* TrendingCollectionViewCell.swift */,
+				3917567C2985C20B00D54460 /* CategoryTableViewCell.swift */,
+				3917567E2985C64A00D54460 /* SectionHeaderView.swift */,
+				391756802986A77100D54460 /* PlacesTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D08A757C52014177AC38C025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E77B11F44CA4AAFEF1541ED /* Pods_KinoKz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF44472B6D3ADA7B0D58A31D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45F36ADAC6A1D02408E2BACB /* Pods-KinoKz.debug.xcconfig */,
+				AD5696C22DE2A220A17EA204 /* Pods-KinoKz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		391756542981D21B00D54460 /* KinoKz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391756692981D21D00D54460 /* Build configuration list for PBXNativeTarget "KinoKz" */;
+			buildPhases = (
+				3B0E4C46917AB2B500776CF5 /* [CP] Check Pods Manifest.lock */,
+				391756512981D21B00D54460 /* Sources */,
+				391756522981D21B00D54460 /* Frameworks */,
+				391756532981D21B00D54460 /* Resources */,
+				F165773BAA39E21D77396910 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinoKz;
+			productName = KinoKz;
+			productReference = 391756552981D21B00D54460 /* KinoKz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3917564D2981D21B00D54460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					391756542981D21B00D54460 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 391756502981D21B00D54460 /* Build configuration list for PBXProject "KinoKz" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3917564C2981D21B00D54460;
+			productRefGroup = 391756562981D21B00D54460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				391756542981D21B00D54460 /* KinoKz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		391756532981D21B00D54460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391756652981D21D00D54460 /* LaunchScreen.storyboard in Resources */,
+				391756622981D21D00D54460 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B0E4C46917AB2B500776CF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KinoKz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F165773BAA39E21D77396910 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinoKz/Pods-KinoKz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinoKz/Pods-KinoKz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KinoKz/Pods-KinoKz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		391756512981D21B00D54460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3917567729848FD700D54460 /* CategoryCollectionViewCell.swift in Sources */,
+				3917565D2981D21B00D54460 /* MainViewController.swift in Sources */,
+				391756592981D21B00D54460 /* AppDelegate.swift in Sources */,
+				3917567229830CD300D54460 /* TicketViewController.swift in Sources */,
+				3917567429830CEF00D54460 /* PlaceViewController.swift in Sources */,
+				391756702981D4AB00D54460 /* ProfileViewController.swift in Sources */,
+				3917567D2985C20B00D54460 /* CategoryTableViewCell.swift in Sources */,
+				3917567F2985C64A00D54460 /* SectionHeaderView.swift in Sources */,
+				391756812986A77100D54460 /* PlacesTableViewCell.swift in Sources */,
+				3917567B29855C3C00D54460 /* TrendingCollectionViewCell.swift in Sources */,
+				3917565B2981D21B00D54460 /* SceneDelegate.swift in Sources */,
+				3917566E2981D48D00D54460 /* MovieViewController.swift in Sources */,
+				39175679298492E900D54460 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		391756632981D21D00D54460 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391756642981D21D00D54460 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		391756672981D21D00D54460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		391756682981D21D00D54460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3917566A2981D21D00D54460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F36ADAC6A1D02408E2BACB /* Pods-KinoKz.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VCZCJD3K74;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinoKz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuradinadil.KinoKz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3917566B2981D21D00D54460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD5696C22DE2A220A17EA204 /* Pods-KinoKz.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VCZCJD3K74;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinoKz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuradinadil.KinoKz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		391756502981D21B00D54460 /* Build configuration list for PBXProject "KinoKz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391756672981D21D00D54460 /* Debug */,
+				391756682981D21D00D54460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391756692981D21D00D54460 /* Build configuration list for PBXNativeTarget "KinoKz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3917566A2981D21D00D54460 /* Debug */,
+				3917566B2981D21D00D54460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3917564D2981D21B00D54460 /* Project object */;
+}
