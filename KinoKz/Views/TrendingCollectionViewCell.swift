@@ -25,6 +25,12 @@ class TrendingCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func cofigure(with backdropPath: String) {
+        guard let url = URL(string: "\(Constants.Links.imageUrl)\(backdropPath)") else { fatalError("Incorrect link!")}
+        DispatchQueue.main.async {
+            self.trendingImageView.kf.setImage(with: url)
+        }
+    }
 }
 
 private extension TrendingCollectionViewCell{

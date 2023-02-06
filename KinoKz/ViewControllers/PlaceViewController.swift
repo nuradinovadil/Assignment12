@@ -10,6 +10,8 @@ import SnapKit
 
 final class PlaceViewController: UIViewController {
 
+    var apiCaller = APICaller()
+    var movieList: [MovieModel] = []
     
     private let scrollView = UIScrollView()
     private let contentView = UIView()
@@ -46,6 +48,9 @@ final class PlaceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        apiCaller.delegate = self
+        apiCaller.fetchRequest()
 
         view.backgroundColor = .systemBackground
         setupViews()
@@ -57,6 +62,19 @@ final class PlaceViewController: UIViewController {
         placesTableView.delegate = self
     }
     
+}
+
+extension PlaceViewController : APICallerDelegate {
+    func didUPdateMovieList(with movieList: [MovieModel]) {
+        self.movieList = movieList
+        DispatchQueue.main.async {
+            self.placesTableView.reloadData()
+        }
+    }
+    
+    func didFailWithError(_ error: Error) {
+        print("Failed with error!!!", error)
+    }
 }
 
 extension PlaceViewController : UICollectionViewDataSource {
@@ -86,13 +104,12 @@ extension PlaceViewController : UICollectionViewDelegateFlowLayout {
 
 extension PlaceViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Constants.Values.cinemas.count    }
+        return movieList.count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Identifiers.placesTableViewCell, for: indexPath) as! PlacesTableViewCell
-        cell.setText(with: cinemaListTwo[indexPath.row])
-        cell.setImage(with: cinemaImages[indexPath.row])
-        cell.setAddress(with: cinemaAdresses[indexPath.row])
+        cell.configure(with: movieList[indexPath.row])
         return cell
     }
 }
@@ -124,16 +141,17 @@ private extension PlaceViewController {
         }
         searchBar.snp.makeConstraints { make in
             make.top.leading.trailing.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.05)
+            make.height.equalTo(view).multipliedBy(0.05)
         }
         placesCollectionView.snp.makeConstraints { make in
             make.top.equalTo(searchBar.snp.bottom)
             make.leading.trailing.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.05)
+            make.height.equalTo(view).multipliedBy(0.05)
         }
         placesTableView.snp.makeConstraints { make in
             make.top.equalTo(placesCollectionView.snp.bottom).offset(10)
             make.leading.trailing.bottom.equalToSuperview()
+            make.height.equalTo(view).multipliedBy(2.5)
         }
         
     }

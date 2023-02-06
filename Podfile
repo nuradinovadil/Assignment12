@@ -7,4 +7,5 @@ target 'KinoKz' do
 
   # Pods for KinoKz
 pod 'SnapKit', '~> 5.0.0'
+pod 'Kingfisher'
 end

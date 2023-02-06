@@ -52,6 +52,17 @@ class PlacesTableViewCell: UITableViewCell {
         addressesOfCinemas.text = string
     }
     
+    func configure(with model: MovieModel){
+        guard let url = URL(string: "\(Constants.Links.imageUrl)\(model.posterPath)") else { fatalError("Incorrect link to Poster path!")
+        }
+        let stringGenres = model.genreIds.map { String($0)}
+         DispatchQueue.main.async {
+            self.imageOfCinemas.kf.setImage(with: url)
+             self.nameOfCinemas.text = model.title
+             self.addressesOfCinemas.text = stringGenres.joined(separator: ", ")
+        }
+    }
+    
 }
 
 private extension PlacesTableViewCell {
